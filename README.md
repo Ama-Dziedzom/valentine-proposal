@@ -58,8 +58,8 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the r
 ## 🎨 Asset Customization
 
 - **Images**: 
-  - The "sad" image is set to `/sad-me.jpg`. Please save your first photo into the `public/` directory with this name.
-  - The "happy" image is set to `/happy-me.jpg`. Please save your second photo (the one in the suit) into the `public/` directory with this name.
+  - The "sad" image is set to `/assets/sad.jpeg`.
+  - The "happy" image is set to `/assets/happy.jpeg`.
   - The "initial" image is currently a cute bear GIF. You can replace this in `src/app/page.tsx`.
 - **Sound**: The success chime is sourced from a public CDN. You can find it in the `handleYesClick` function.
 
