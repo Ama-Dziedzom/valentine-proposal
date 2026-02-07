@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Valentine's Day Interactive Proposal ❤️
 
-## Getting Started
+A playful, interactive website designed for a fun Valentine's Day proposal. The site features progressive emotional manipulation (in a cute way!) as the user clicks the "No" button, eventually leading them to an irresistible "Yes".
 
-First, run the development server:
+## ✨ Features
+
+- **Progressive Escalation**: The "No" button triggers 3 distinct stages of "sadness":
+  1. **First Click**: A cute sad image and a pouty message.
+  2. **Second Click**: Larger sad image and a more pleading message.
+  3. **Third Click**: The sad image dominates the screen, the "Yes" button grows 2.5x larger, and the "No" button shrinks to 40% size.
+- **Success Celebration**: Accepting the proposal triggers:
+  - A happy celebration animation.
+  - Interactive confetti burst.
+  - A romantic success chime sound.
+  - A playful success message.
+- **Modern Aesthetic**: Built with glassmorphism, soft gradients, and smooth Framer Motion animations.
+- **Responsive Design**: Works perfectly on both mobile and desktop.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Interactivity**: [Canvas Confetti](https://github.com/catdad/canvas-confetti)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+
+Ensure you have [Node.js](https://nodejs.org/) installed on your system.
+
+### 2. Setup
+
+Clone or copy the project files to your desired directory.
+
+```bash
+cd valentine-proposal
+npm install
+```
+
+### 3. Run Locally
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/page.tsx`: Core logic and interaction flow.
+- `src/app/globals.css`: Design system and custom animations.
+- `src/app/layout.tsx`: Font and metadata configuration.
 
-## Learn More
+## 🎨 Asset Customization
 
-To learn more about Next.js, take a look at the following resources:
+- **Images**: 
+  - The "sad" image is set to `/sad-me.jpg`. Please save your first photo into the `public/` directory with this name.
+  - The "happy" image is set to `/happy-me.jpg`. Please save your second photo (the one in the suit) into the `public/` directory with this name.
+  - The "initial" image is currently a cute bear GIF. You can replace this in `src/app/page.tsx`.
+- **Sound**: The success chime is sourced from a public CDN. You can find it in the `handleYesClick` function.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Made with ❤️ for Valentine's Day.
